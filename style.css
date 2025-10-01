@@ -1,0 +1,51 @@
+/* ==================== PERSONALIZACIÓN DE BOOTSTRAP ==================== */
+
+/* 1. Importar la fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+ 
+/* 2. Definir variables de color y tipografía */
+:root {
+    --bs-primary: #2979FF;
+    --bs-primary-rgb: 41, 121, 255;
+    --bs-secondary: #FFC107;
+    --bs-secondary-rgb: 255, 193, 7;
+    --bs-body-font-family: 'Nunito', sans-serif;
+    --bs-body-color: #555;
+    --bs-body-bg: #fff;
+}
+
+/* 3. Aplicar personalizaciones a componentes de Bootstrap */
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1e63d8;
+    --bs-btn-hover-border-color: #1c5bca;
+}
+
+.btn-secondary {
+    --bs-btn-color: #333;
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color: var(--bs-secondary);
+    --bs-btn-hover-color: #333;
+    --bs-btn-hover-bg: #e6ac00;
+    --bs-btn-hover-border-color: #d9a200;
+}
+
+.text-accent {
+    color: #4CAF50 !important; /* Verde */
+}
+
+/* 4. Estilos personalizados adicionales */
+.section {
+    padding: 6rem 0;
+}
+
+.program-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
